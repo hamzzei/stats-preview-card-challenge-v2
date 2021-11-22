@@ -2,32 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <section id="card">
+    <section id="img_section">
+      <img src="image-header-mobile.jpg" alt="a group of happy people working around a table" id="mobile_img">
+      <img src="image-header-desktop.jpg" alt="a group of happy people working around a table" id="desktop_img">
+    </section>
+    <main id="main">
+      <h1 id="title">Get <span class="highlight">insights</span> that help your business grow.</h1>
 
-  Get insights that help your business grow.
+      <p id="description">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+    experience, and overall efficiency.</p>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <h2 class="stats">10k+</h2>
+      <p class="stat_heading">companies</p>
+      <h2 class="stats">314</h2>
+      <p class="stat_heading">templates</p>
+      <h2 class="stats">12m+</h2>
+      <p class="stat_heading">queries</p>
+    </main>
+  </section>
+  <footer id="footer">
+    <section class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">hamzzei</a>.
+    </section>
+  </footer>
 </body>
 </html>
