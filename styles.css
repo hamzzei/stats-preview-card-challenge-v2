@@ -105,3 +105,54 @@ main {
     text-align: center;
     margin: 1em;
 }
+
+@media (min-width: 750px) {
+
+    body {
+        grid-template-columns: min(15vw, 10.5rem) auto min(15vw, 10.5rem);
+        grid-template-rows: 11.1rem auto 11.1rem;
+    }
+
+    #card {
+        display: flex;
+        flex-direction: row-reverse;
+        min-width: 500px;
+    }
+
+    #img_section {
+        max-width: 540px; /* min width may be needed */
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 7px;
+        flex: 1 3 540px;
+        justify-content: flex-end;
+        overflow: hidden;
+    }
+
+    #main {
+        flex: 1 1 540px;
+    }
+
+    #stats_section {
+        display: flex;
+    }
+
+    #mobile_img {
+        display: none;
+    }
+
+    #desktop_img {
+        display: block;
+        mix-blend-mode: multiply;
+        opacity: 75%;
+
+        
+        height: 100%;
+    }
+}
+
+/* @media (min-width: 750px) and (min-height: 800px) {
+    
+    #desktop_img {
+        margin-right: -5rem;
+    }
+} */
