@@ -56,6 +56,9 @@ footer {
 #title {
     color: hsl(0, 0%, 100%);
     font-family: 'Inter', sans-serif;
+    margin: 1.45em 0.7em 0.6em;
+    font-size: 1.7rem;
+    line-height: 2rem;
 }
 
 .highlight {
@@ -65,16 +68,25 @@ footer {
 #description {
     color: hsla(0, 0%, 100%, 0.75);
     font-family: 'Inter', sans-serif;
+    line-height: 1.53rem;
+    font-size: 15px;
+    margin: 0 1em 2.65em;
 }
 
 .stats {
     color: hsl(0, 0%, 100%);
     font-family: 'Inter', sans-serif;
+    margin: 0 0 0.3em;
 }
 
 .stat_heading {
     color: hsla(0, 0%, 100%, 0.6);
     font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8rem;
+    margin: 0 0 2.14em;
+}
+
+.capitalize {
     text-transform: uppercase;
 }
 
