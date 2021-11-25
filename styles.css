@@ -106,11 +106,11 @@ main {
     margin: 1em;
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (min-width: 650px) {
 
     body {
-        grid-template-columns: 11.45% auto 11.45%;
-        grid-template-rows: 11.1rem auto 11.1rem; /* % needed */
+        grid-template-columns: 11.45vw auto 11.45vw;
+        grid-template-rows: 22.2vh auto 22.2vh;
     }
 
     #card {
@@ -123,7 +123,7 @@ main {
         max-width: 540px;
         border-top-left-radius: 0;
         border-bottom-right-radius: 7px;
-        flex: 1 3 540px;
+        flex: 1 2 540px;
         justify-content: flex-end;
         overflow: hidden;
     }
@@ -159,14 +159,14 @@ main {
 
     #title {
         font-size: 2.25rem;
-        line-height: 2.73rem;
-        margin-top: 4.5rem;     /* % needed */
+        line-height: 2.73rem;   
+        margin-top: 9vh;        
         margin-bottom: 1.6rem;
     }
 
     #description {
-        margin-right: 2rem;
-        margin-bottom: 4.55rem;
+        margin-right: 2rem;     
+        margin-bottom: 5.05vw; 
     }
 
     #stats_section {
@@ -174,21 +174,10 @@ main {
     }
 
     .stats {
-        margin-bottom: 0.35rem;
+        margin-bottom: 0.35rem; 
     }
 
     #stat_2, #stat_3 {
-        margin-left: 4.2rem; /* % needed */
+        margin-left: 4.62vw; 
     }
 }
-/* 
-@media (min-width: 750px) {
-    
-    #desktop_img {
-        margin-right: -5rem;
-    }
-
-    #img_section {
-        max-width: calc(540px - 5rem);
-    }
-} */
