@@ -68,7 +68,7 @@ footer {
 #description {
     color: hsla(0, 0%, 100%, 0.75);
     font-family: 'Inter', sans-serif;
-    line-height: 1.53rem;
+    line-height: 1.54rem;
     font-size: 15px;
     margin: 0 1em 2.65em;
 }
@@ -106,11 +106,11 @@ main {
     margin: 1em;
 }
 
-@media (min-width: 750px) {
+@media (orientation: landscape) {
 
     body {
-        grid-template-columns: min(15vw, 10.5rem) auto min(15vw, 10.5rem);
-        grid-template-rows: 11.1rem auto 11.1rem;
+        grid-template-columns: 11.45% auto 11.45%;
+        grid-template-rows: 11.1rem auto 11.1rem; /* % needed */
     }
 
     #card {
@@ -120,7 +120,7 @@ main {
     }
 
     #img_section {
-        max-width: 540px; /* min width may be needed */
+        max-width: 540px;
         border-top-left-radius: 0;
         border-bottom-right-radius: 7px;
         flex: 1 3 540px;
@@ -128,12 +128,20 @@ main {
         overflow: hidden;
     }
 
-    #main {
-        flex: 1 1 540px;
+    #title, #description, .stats, .stat_heading, #main {
+        margin: 0;
     }
 
-    #stats_section {
-        display: flex;
+    #main {
+        flex: 1 1 540px;
+        text-align: left;
+
+        display: grid;
+        grid-template-columns: 12.5% auto 15%;
+    }
+
+    #main_section {
+        grid-column: 2 / 3;
     }
 
     #mobile_img {
@@ -148,11 +156,39 @@ main {
         
         height: 100%;
     }
-}
 
-/* @media (min-width: 750px) and (min-height: 800px) {
+    #title {
+        font-size: 2.25rem;
+        line-height: 2.73rem;
+        margin-top: 4.5rem;     /* % needed */
+        margin-bottom: 1.6rem;
+    }
+
+    #description {
+        margin-right: 2rem;
+        margin-bottom: 4.55rem;
+    }
+
+    #stats_section {
+        display: flex;
+    }
+
+    .stats {
+        margin-bottom: 0.35rem;
+    }
+
+    #stat_2, #stat_3 {
+        margin-left: 4.2rem; /* % needed */
+    }
+}
+/* 
+@media (min-width: 750px) {
     
     #desktop_img {
         margin-right: -5rem;
+    }
+
+    #img_section {
+        max-width: calc(540px - 5rem);
     }
 } */
